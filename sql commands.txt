@@ -1,0 +1,15 @@
+CREATE table users(userid INT AUTO_INCREMENT,name CHAR(50),email CHAR(50),password CHAR(100),PRIMARY KEY userid);
+
+CREATE TABLE courses(courseid INT AUTO_INCREMENT,course_name CHAR(50),course_desc CHAR(250),course_teacher CHAR(50),PRIMARY KEY(courseid));
+
+INSERT INTO courses(course_name,course_desc,course_teacher) VALUES("Creative Writing","Are you a scribbler, a secret diarist or a would-be journalist? Find your unique writing voice with our creative writing course.","Mr. Naresh");
+
+INSERT INTO courses(course_name,course_desc,course_teacher) VALUES("Sanskrit 101","Sanskrit for beginners.","Ms. Devanshi"); 
+
+CREATE table course_to_video(courseid INT,videoid VARCHAR(200),videotitle VARCHAR(50),videodesc VARCHAR(1000));
+
+CREATE table user_to_course(userid INT, courseid INT);
+
+INSERT into course_to_video(courseid,videoid, videotitle,videodesc) values(1,"video_resume2.mp4","Creative Writing: The Craft of Character","At the center of a good story are the characters in it. In this course aspiring writers will discover how to build and bring to life complex, vivid and unforgettable characters. We will study the choices a writer makes to bring all characters to life on the page, and we will perform written exercises in order to develop a variety of writing and pre-writing techniques, in order to create a variety of characters. We will learn how to use our own life experiences, and the people we know (and how not to!). We will develop inner (thoughts and feelings) and outer (appearance, habits, behavior) lives for our characters and see how that can lead us to richer and more interesting stories. We will breathe life into our characters and let them surprise us");
+
+INSERT into course_to_video(courseid,videoid, videotitle,videodesc) values(1,"video_resume.mp4","Creative Writing: The Craft of Plot","In this course aspiring writers will be introduced to perhaps the most elemental and often the most challenging element of story: plot.  We will learn what keeps it moving, how it manipulates our feelings, expectations, and desires.  We will examine the choices storytellers make to snag our imaginations, drag them into a fictional world, and keep them there. We will learn how to outline and structure a plot, discuss narrative arc, pacing and reversals and reveal the inevitable surprise: connecting the beginning, middle and end.");
