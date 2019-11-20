@@ -1,0 +1,129 @@
+<html>
+	<head>
+		<style>
+		</style>
+		
+		<script>
+			xhr=new XMLHttpRequest();
+			scrollAmt=100;
+			count=0;
+			function getChunk(){
+				scroll=document.body.scrollTop||document.documentElement.scrollTop;
+				if(scroll>scrollAmt){
+					scrollAmt=scroll;
+					xhr.onreadystatechange=showChunk;
+					xhr.open("GET","getChunk.php?count="+count++,true);
+					xhr.send();
+				}
+			}
+			function showChunk(){
+			console.log(xhr.status)
+				if(xhr.readyState==4 && xhr.status==200){
+				console.log("hello");
+					document.getElementById("content").innerHTML+=xhr.responseText;
+							
+				
+				}
+				
+			
+			}
+			window.onscroll=getChunk;
+		</script>
+	</head>
+	<body>
+		<p id="content">
+			
+			As a handbook this guide is intended not just to help and inform, but also to provoke and
+inspire. The contributors are professionals within their fields of expertise and apart from
+being asked to cover the necessary topic have been free to deal with their subject how they
+see fit – there has been no attempt to produce regulation and uniform chapters. The book
+is aimed primarily at the student embarking on a creative writing programme in Higher
+Education, with many of the writers here also teaching on creative writing MAs or MFAs,
+and to that end many of the chapters reflect the different teaching styles on offer. This
+book, therefore, is also intended for tutors. The aim throughout has been to have within
+the pages of a single book all that you might need as a writer or tutor to further your writing
+and teaching, and to further your writing career. It explores a number of different contexts
+within which the student-writer and teacher of creative writing work: literary tradition and
+genre, the postgraduate degree, the academy, literary culture, literary theory, the world of
+publishing and production, the world of being a writer and writing.
+How to read this book
+I don’t for a second imagine that anybody will read this book from cover to cover; it is not
+that type of book. Rather, it is the virtue of a handbook that readers can jump immediately
+to what they need to know: I want to write a novel (Rogers); teach creative writing in the
+community (Sargent); introduce literary theory into my workshops (Ramey); publish
+poetry (Twichell; O’Brien); get an agent (Smith; Friedmann; Brodie), choose a degree
+(Newman; Vanderslice) and so on. Conversely, if you have no interest in cultural, academic or theoretical contexts you will quickly see that you should avoid Section One, and if
+you have no interest in knowing how to get your writing out into the ‘real’ world and make
+a splash as a writer, you will turn a blind eye to Section Three (although I gather that this
+rather unlikely). But if you were, indeed, to be the ‘ideal reader’ and read the book from
+one end to the other, you might make a number of surprising connections.
+For instance, Brian Kiteley’s ‘Reading and Writing Historical Fiction’ and David Rain’s
+‘Literary Genres’ include digressions into different aspects of the history of the novel, and
+might be read in conjunction with Jane Rogers’s ‘Introduction to the Novel’. Aaron
+Kunin’s ‘New Poetries’ is packed full of references to experiments with writing and concepts and takes the reader well beyond the realms of poetry. It could be read alongside
+Thalia Field’s chapter on ‘Experimental Writing’, after which there would be the surprise
+of a different kind of experimental writing to be found in Linda Sargent’s ‘Writing in the
+Community’. You certainly might expect to find mention of the experimental French group
+of writers known as Oulipo in ‘New Poetries’, but you will also find an Oulipo exercise in
+the chapter on historical fiction. Both Alan Brown’s ‘Writing for Children’ and Linda
+Newbery’s ‘Writing for Teenagers’ might open your eyes to ways of thinking about writing
+which draw on creative processes you might not otherwise encounter, even if you only
+intend to write for ‘grown-ups’. The chapter on ‘Writing as “Therapy”’ might be a long way
+down the list of chapters to read if your first interest is ‘Form in Poetry’, but in Fiona
+Sampson’s piece you will find a section on how text affects audience, spurred on by the poet
+John Kinsella, and discussing Keats, Kathleen Jamie, Celan, Pound, Eliot, amongst others,
+along the way. In passing you would note that there are some common reference points:
+Aristotle’s Poetics recurs time and again; T. S. Eliot’s ‘Tradition and the Individual Talent’
+is surprisingly popular, and William Goldman’s dictum, ‘get in late, get out early’ is commandeered by novel, short story and script.
+Also remember that many of the contributors are both writers and teachers. All the
+pieces have a great enthusiasm. You have only to read Lauri Ramey’s piece on ‘Creative
+Writing and Critical Theory’ to know that to be involved in her class would treat you to a
+full-on immersion in both criticism and creativity, alongside the broadest of historical
+sweeps, and would instil a sense of just how exciting and potent these activities can be for
+your own writing. And Gareth Creer’s plea for the teaching of writing as something that is
+much, much more than a means of supplementing an income that is always widely variable shows that creative writing teaching, in and out of the academy, can be a necessary
+part of the writer’s writing life. You will frequently encounter ideas you will want to introduce into your own practice.
+The different approaches offer different models of teaching and reflect the success, or
+otherwise, of different kinds of writing within contemporary culture. Lee Gutkind’s chapter
+is a replication of teaching ‘creative nonfiction’ via seminars and workshops, as is E. A.
+Markham’s chapter on the short story. Sean O’Brien’s ‘Introduction to Poetry’ gives practical advice on the use of a workshop, and what should constitute a good one. Some chapters stand as polemic and some as defences for types of writing regarded as ‘lesser’ in the
+context of creative writing (for example, Susan Bassnett’s chapter on ‘Translation’ and also
+James Sheard’s ‘Writing for the Web’), or little considered (‘Writing for Radio’ in Mike
+Harris’s chapter, and also in Alan Brodie’s ‘The Literary Agent: Television, Radio and
+Theatre’). Sean O’Brien’s attack on the dominance of prose over poetry in his essay on
+‘Verse Drama’ has a corollary in Susan Bassnett’s note on the 1940s Penguin Classics translations of Homer’s Iliad and Odyssey into prose form rather than a poetic equivalent.
+O’Brien’s chapter highlights verse drama’s current near-invisibility and decline and
+amounts to a virtual ‘recovery’ of its possibilities and models. Similarly, George Szirtes’
+chapter champions other poetic art forms that struggle for a good hearing, the long poem
+and the sequence, and Alan Brodie makes a heartfelt plea for Radio Drama as the purest
+medium for the scriptwriter.
+But a book such as this also gives you the opportunity to think
+about trying out writing you might not normally have considered. Judith Barrington’s
+chapter on ‘Writing the Memoir’ begins by dispelling the belief that it is a form available
+only to ‘the famous’. Any prose writer would benefit from this chapter as it works through
+the shaping of narrative. I hope that one of the joys of this book is that, in addition to its
+primary functions, it has chapters that will reward those curious about all aspects of literary culture and writing.
+2 Introduction
+The book also includes insights into areas of writing and writing contexts that will hopefully be new or unusual. For instance, a continuing assumption by some is that the activities of literary criticism and creative writing make unhappy bedfellows within the academy,
+with criticism the established forum for literature and creative writing an unwelcome
+johnny-come-lately. Lauri Ramey’s chapter here not only demonstrates the shared heritage
+for both but the ways in which critical studies from Longinus onwards can be used to engage
+with creativity, the role of the writer and writing. Similarly, thinking about ‘genre’ may not
+immediately spring to mind as a way in to creativity, but its importance is here shown in
+David Rain’s chapter as another feature of contemporary literary culture which has its roots
+in the Classical age and which can inform the practice of writing and our reflection upon
+it. But genre isn’t just about what we are writing, it is about how we are reading and what
+we are expecting when we do pick up a poem or novel, or sit down to watch a film or play.
+And, with the history of the novel as a model, Rain shows how new genres and new literature comes into being. Genre is one of the broadest contexts within which a writer can
+work, yet the student writer is rarely called upon to explore it unless perhaps asked to define
+the difference between ‘literary’ and ‘genre’ fiction (also discussed in Rain’s chapter; and
+you will find an exercise to understand genre in Mike Harris’s ‘Introduction to
+Scriptwriting’ and discussion of ‘genre’ in ‘Science Fiction and Fantasy’ by Crawford Kilian
+and ‘Writing Crime Fiction’ by John Dale). Exploration of genre inevitably takes us into
+questions of originality and levels of artistic ambition (also addressed by Lauri Ramey in
+the context of literary criticism, and in my chapter on ‘The Role of the Artist’), what kind
+of writing ‘enables’ others to write, and what can only be admired as one-off performances.
+==========================================================================================================================================================
+		</p>
+	</body>
+</html>
