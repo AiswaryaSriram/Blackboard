@@ -10,6 +10,7 @@ An e-learning website for students to view educational videos, course materials 
 7. CSS and Bootstrap dependencies are within material-dashboard folder.
 8. The Blackboard folder must be placed in /opt/lampp/htdocs.
 9. The sql commands for creating the 4 tables are present in sqlcommands.txt
+10. Within wtproject2 extract material-dashboard.zip
 
 Steps to get the website up and running:
 
